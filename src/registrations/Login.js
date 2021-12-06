@@ -3,6 +3,8 @@ import "../styles/Login.css";
 import apple from "../assets/apple.png";
 import google from "../assets/google.png";
 
+import { Link } from "react-router-dom";
+
 const Login = () => {
   return (
     <div className="flex h-screen ig-bg justify-center pt-16">
@@ -55,7 +57,9 @@ const Login = () => {
           <div className="flex justify-center bg-white border p-6">
             <p className="text-sm ">
               Don't have an account?{" "}
-              <span className="text-blue-500 font-semibold">Sign up</span>
+              <Link to="/signup" className="text-blue-500 font-semibold">
+                Sign up
+              </Link>
             </p>
           </div>
         </div>

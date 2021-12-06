@@ -1,0 +1,16 @@
+.ig-bg {
+  background-color: #fafafa;
+}
+
+@font-face {
+  font-family: "Billabong";
+  src: url("../fonts/Billabong.ttf");
+}
+
+.billabong {
+  font-family: "Billabong";
+}
+
+.fb-blue {
+  color: #385185;
+}
