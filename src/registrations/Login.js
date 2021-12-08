@@ -3,9 +3,14 @@ import "../styles/Login.css";
 import apple from "../assets/apple.png";
 import google from "../assets/google.png";
 
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Login = () => {
+  let navigate = useNavigate();
+  const goToHomePage = () => {
+    navigate("/");
+  };
+
   return (
     <div className="flex h-screen ig-bg justify-center pt-16">
       <section>
@@ -28,6 +33,7 @@ const Login = () => {
 
               <div className="flex flex-col pt-4">
                 <button
+                  onClick={() => goToHomePage()}
                   type="submit"
                   className="text-white font-semibold bg-blue-200 rounded py-1 text-sm"
                 >
@@ -65,8 +71,8 @@ const Login = () => {
         </div>
         <p className="flex justify-center text-sm pt-6">Get the app.</p>
         <div className="flex justify-center pt-6 space-x-2">
-          <img className="w-32" src={apple} />
-          <img className="w-32" src={google} />
+          <img alt="" className="w-32" src={apple} />
+          <img alt="" className="w-32" src={google} />
         </div>
       </section>
     </div>

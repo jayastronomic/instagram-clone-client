@@ -1,4 +1,4 @@
-import react from "react";
+import React from "react";
 import "../styles/Signup.css";
 import apple from "../assets/apple.png";
 import google from "../assets/google.png";
@@ -80,8 +80,8 @@ const Signup = () => {
         </div>
         <p className="flex justify-center text-sm pt-6">Get the app.</p>
         <div className="flex justify-center pt-6 space-x-2">
-          <img className="w-32" src={apple} />
-          <img className="w-32" src={google} />
+          <img alt="" className="w-32" src={apple} />
+          <img alt="" className="w-32" src={google} />
         </div>
       </section>
     </div>
