@@ -1,7 +1,12 @@
 import React from "react";
+import Suggestions from "./Suggestions";
 
 const Home = () => {
-  return <div></div>;
+  return (
+    <div>
+      <Suggestions />
+    </div>
+  );
 };
 
 export default Home;

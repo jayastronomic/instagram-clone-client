@@ -5,17 +5,19 @@ import "../styles/Nav.css";
 const Nav = () => {
   return (
     <>
-      <nav className="relative flex justify-center px-6 py-2 border-b ">
-        <section className="flex justify-between items-center w-rem">
+      <nav className="flex justify-center px-6 py-2.5 border-b bg-white">
+        <section className="flex justify-between items-center w-59">
           <div>
             <p className="billabong text-4xl">Instagram</p>
           </div>
-          <div className="relative hidden sm:block">
-            <input
-              className="focus:outline-none border border-gray-300 rounded-sm ig-bg text-sm py-0.5 pl-8 w-52"
-              placeholder="Search"
-            />
-            <i className="absolute text-gray-400 fa-xs fa fa-search left-4 top-2" />
+          <div className="w-full hidden sm:flex justify-center mr-4">
+            <div className="relative">
+              <input
+                className="focus:outline-none border border-gray-300 rounded-sm ig-bg text-sm py-1.5 pl-8 w-64"
+                placeholder="Search"
+              />
+              <i className="absolute text-gray-400 fa-xs fa fa-search left-4 top-3" />
+            </div>
           </div>
           <div className="flex items-center text-2xl space-x-6">
             <i class="fas fa-home"></i>
