@@ -1,5 +1,6 @@
 import React from "react";
 import { Outlet } from "react-router";
+import { Link } from "react-router-dom";
 import "../styles/Nav.css";
 
 const Nav = () => {
@@ -20,12 +21,12 @@ const Nav = () => {
             </div>
           </div>
           <div className="flex items-center text-2xl space-x-6">
-            <i class="fas fa-home"></i>
-            <i class="fab fa-facebook-messenger"></i>
-            <i class="far fa-plus-square"></i>
-            <i class="far fa-compass"></i>
-            <i class="far fa-heart"></i>
-            <i class="far fa-user-circle"></i>
+            <Link to="" className="fas fa-home"></Link>
+            <Link to="" className="fab fa-facebook-messenger"></Link>
+            <Link to="" className="far fa-plus-square"></Link>
+            <Link to="" className="far fa-compass"></Link>
+            <Link to="" className="far fa-heart"></Link>
+            <Link to="" className="far fa-user-circle"></Link>
           </div>
         </section>
       </nav>

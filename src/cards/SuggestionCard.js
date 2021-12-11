@@ -1,7 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import ig from "../assets/ig.jpg";
+import FollowButton from "../buttons/FollowButton";
+import FollowingButton from "../buttons/FollowingButton";
 
 const SuggestionCard = () => {
+  const [isClicked, setIsClicked] = useState(false);
+  const onClick = () => {
+    setIsClicked(!isClicked);
+  };
   return (
     <div className="flex w-full justify-between px-4 py-1.5 bg-white border-l border-r">
       <div className="flex space-x-2.5">
@@ -15,9 +21,11 @@ const SuggestionCard = () => {
         </div>
       </div>
       <div className="flex">
-        <button className="self-center bg-blue-500 text-white font-semibold rounded text-sm py-1.5 px-2.5">
-          Follow
-        </button>
+        {isClicked ? (
+          <FollowingButton onClick={onClick} />
+        ) : (
+          <FollowButton onClick={onClick} />
+        )}
       </div>
     </div>
   );
