@@ -7,13 +7,15 @@ import Nav from "./components/Nav";
 import Home from "./components/Home";
 import UserProfile from "./components/UserProfile";
 
+import { currentUser } from "./seedData/currentUser";
+
 function App() {
   return (
     <Routes>
       <Route path="/login" element={<Login />} />
       <Route path="/signup" element={<Signup />} />
       <Route path="/" element={<Nav />}>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Home {...currentUser} />} />
         <Route path="/design" element={<UserProfile />} />
       </Route>
       {/* <Route path="*" element={<Error />} /> */}

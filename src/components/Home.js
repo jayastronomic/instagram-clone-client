@@ -1,11 +1,10 @@
 import React from "react";
 import Suggestions from "./Suggestions";
+import Feed from "./Feed";
 
-const Home = () => {
+const Home = (props) => {
   return (
-    <div>
-      <Suggestions />
-    </div>
+    <div>{props.followings.length === 0 ? <Suggestions /> : <Feed />}</div>
   );
 };
 
