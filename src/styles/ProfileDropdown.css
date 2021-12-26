@@ -1,0 +1,15 @@
+.dd-shadow {
+  box-shadow: 0px 0px 5px rgb(211, 211, 211);
+}
+
+.dd-shadow-point {
+  box-shadow: 0px 0px 5px rgb(211, 211, 211);
+}
+
+.dd-w {
+  width: 14.55rem;
+}
+
+.left-4-5 {
+  left: 1.125rem;
+}
